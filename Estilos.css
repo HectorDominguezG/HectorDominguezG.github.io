@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    justify-content: center;
+    background-image:url(Fotos/Stage_Basement_room.jpg);
+    background-size: cover ;
+    background-position: center 0;
+    background-attachment: fixed;
+    font-family: Isaac;
+    color: black;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    font-family: Isaac;
+    color:red;
+    font-size:80px ;
+    -webkit-text-stroke: 1px black;
+}
+nav ul{
+    background-image:url(Fotos/title.png);
+    background-repeat: no-repeat;
+    background-size: auto 160%;
+    background-position: center;
+    text-align: center;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    -webkit-text-stroke: 1px black;
+}
+@font-face {
+    font-family: 'Isaac';
+    src: url(Fuentes/upheavtt.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.Partedearriba{
+    position:relative;
+    z-index:2;
+    top:28px;
+    width:1000px;
+    height:2153px; 
+    min-height:400px;
+    margin-bottom: 60px;
+    background:url(Fotos/container_top.png) top no-repeat;
+    
+}
+#Texto{
+    position:absolute;
+    z-index:5;
+    top:6%;
+    left:24%; 
+    box-sizing:border-box;
+    width: 500px;
+    height:58px;
+    text-align:center;
+    color:white;
+    font-size: 60px;
+    -webkit-text-stroke: 2px black ;
+}
+#Partedeabajo{
+    position:absolute;
+    margin-top: 17%;
+    padding: 100px 40px;
+    color: black;
+    background: url(Fotos/container.png) center;
+    background-position: center;
+    margin-bottom:10px;
+    text-align: justify;
+    line-height: 30px;
+}
+#Partedeabajo h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: lighter;
+}
+img{
+display:block; 
+width: auto;
+height: auto;
+margin: auto;
+}
+
+.caja{
+    position:relative;
+    width:1000px;
+    margin:auto;
+}
+footer{
+    position:relative;
+    padding: 0px 0px 200px;
+    z-index: -1;
+    background-image: url(Fotos/container_bottom.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+@keyframes Rotacion{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+svg{
+    margin-left: 800px;
+    animation: Rotacion 5s linear infinite;
+}
